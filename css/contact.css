@@ -1,0 +1,353 @@
+body{
+    font-family: karla;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: rgb(196, 230, 213);
+}
+*{
+    box-sizing: border-box;
+}
+
+/* contact section  */
+
+form{
+    position: relative;
+}
+form .contact{
+    border: 1px solid white;
+    width: 50%;
+    margin: auto;
+    position: absolute;
+    background-color: white;
+    border-radius: 6px;
+    top: 2.5vh; 
+    left: 50%;
+    transform: translate(-50%);
+    padding: 20px 20px;
+
+}
+
+
+form .contact h2{
+    font-size: 25px;
+    text-transform: capitalize;
+    color: rgb(26, 26, 28);
+    margin-top: 0;
+}
+/* name section  */
+form .contact .name{
+    
+    display: flex;
+    
+
+}
+form .contact .name .fl_sect:first-child{
+    margin-right: 20px;
+    
+}
+
+form .contact .name .fl_sect {
+    padding: 10px 0;
+    width: 50%;
+    
+    
+}
+form .contact .name .fl_sect h3{
+    margin: 0;
+    padding: 5px;
+    padding-left: 0;
+    font-size: 15px;
+    color: #757272;
+}
+form .contact .name .fl_sect input{
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 6px;
+    padding: 5px 10px;
+    font-size: 15px;
+}
+form .contact .name .fl_sect input:hover{
+    border: 1px solid rgb(46, 150, 107);
+    cursor: pointer;
+}
+
+form .contact .email{
+    padding: 10px 0;
+    
+}
+form .contact .email h3{
+    margin: 0;
+    padding: 5px;
+    padding-left: 0;
+    font-size: 15px;
+    color: #757272;
+}
+form .contact .email input{
+    width: 100%;
+    font-size: 25px;
+    border: 1px solid black;
+    border-radius: 6px;
+    padding: 5px 10px;
+    font-size: 15px;
+}
+form .contact .email input:hover{
+    border: 1px solid rgb(46, 150, 107);
+    cursor: pointer;
+}
+/* name section  is finish */
+
+/* start query  */
+form .contact .query{
+    padding: 10px 0;
+}
+form .contact .query h3{
+    margin: 0;
+    padding: 5px;
+    padding-left: 0;
+    font-size: 15px;
+    color: #757272;
+}
+form .contact .query section{
+    display: flex;
+    
+}
+form .contact .query section .sect1{
+    margin-right: 20px;
+    
+}
+
+form .contact .query section .sect1,.sect2{
+    width: 100%;
+    font-size: 15px;
+    border: 1px solid black;
+    border-radius: 6px;
+    position: relative;
+    height: 35px;
+    max-width: 100%;
+    padding:10px 0 ;
+    transition: 0.3s;
+    
+}
+form .contact .query section .sect1:hover,.sect2:hover{
+    border: 1px solid rgb(46, 150, 107);
+    scale: 1.1;
+
+}
+form .contact .query section .sect1 input[type="radio"]{
+  accent-color: rgb(46, 150, 107); 
+  width: 20px; 
+  height: 20px;
+  border: none;
+ position: absolute;
+left:10% ;
+top: 8px;
+
+ 
+}
+form .contact .query section .sect1 label{
+    position: absolute;
+    top: 10px;
+    left: 20%;
+    color: rgb(50, 50, 50);
+    font-weight: 700;
+} 
+form .contact .query section .sect2 input[type="radio"]{
+    accent-color: rgb(46, 150, 107); 
+    width: 20px; 
+    height: 20px;
+    border: none;
+   position: absolute;
+  left:10% ;
+  top: 8px;
+   
+  }
+  form .contact .query section .sect2 label{
+    position: absolute;
+    top: 10px;
+    left: 20%;
+    color: rgb(50, 50, 50);
+    font-weight: 700;
+  }
+
+/* finish query  */
+
+/* message section  */
+
+form .contact .mssg{
+    padding: 10px 0;
+    
+}
+form .contact .mssg h3{
+    margin: 0;
+    padding: 5px;
+    padding-left: 0;
+    font-size: 15px;
+    color: #757272;
+}
+form .contact .mssg textarea{
+    width: 100%;
+    font-size: 15px;
+    border: 1px solid black;
+    border-radius: 6px;
+    height: 100px;
+    resize: none;
+    padding: 5px 10px;
+    
+}
+form .contact .mssg textarea:focus{
+    outline: none;
+    
+}
+
+/* check section start  */
+form .contact .check{
+    padding: 10px 0;
+    display: flex;
+}
+form .contact .check input[type="checkbox"]{
+    margin-right: 20px;
+    accent-color: rgb(46, 150, 107); 
+    width: 15px; 
+    height: 15px;
+}
+/* check finish  */
+
+/* button start  */
+
+form .contact .button{
+    padding: 10px 0;
+}
+form .contact .button input{
+    width: 100%;
+    text-align: center;
+    color: white;
+    height: 35px;
+    border-radius: 6px;
+    border: 1px solid rgb(46, 150, 107) ;
+    cursor: pointer;
+    background-color: rgb(46, 150, 107);
+    
+}
+form .contact .button input:hover{
+    background-color: rgb(5, 50, 31);
+}
+
+
+.alert {
+    position: relative;
+    width: 600px;
+    left: 50%;
+    z-index: 1;
+    top: 2.5vh;
+}
+.alert .cont {
+    position: absolute;
+    background-color: rgb(14, 35, 32);
+    text-align: center;
+    padding: 15px;
+    max-width: 100%;
+    border-radius: 6px;
+    height: 100px;
+    transform: translate(-50%);
+
+
+    
+}
+
+.alert .cont h3{
+    font-size: medium;
+    color: white;
+    padding: 0;
+    margin: 0;
+    margin-bottom:15px ;
+    padding-top:5px ;
+}
+.alert .cont p{
+padding: 0;
+margin: 0;
+color: white;
+}
+/* button start  */
+
+
+@media (max-width:768px) {
+    .alert .cont{
+        height: 100px;
+        width: 250px;
+        padding: 0px 15px;
+        
+
+    }
+    form .contact{
+        border: 1px solid white;
+        width: 80%;
+        margin: auto;
+        position: absolute;
+        background-color: white;
+        border-radius: 6px;
+        top: 2.5vh;
+        left: 50%;
+        transform: translate(-50%);
+        padding: 20px 20px;
+    }
+    form .contact h2{
+        font-size: 25px;
+        text-transform: capitalize;
+        color: rgb(26, 26, 28);
+        margin-top: 0;
+    }
+    form .contact .name{
+        flex-wrap: wrap;
+        flex-direction: column;
+    
+    }
+    form .contact .name .fl_sect{
+        width: 100%;
+        padding: 10px 0;
+        
+    }
+    form .contact .name .fl_sect:first-child{
+        margin: 0;
+    }
+
+
+    form .contact .query{
+        padding: 10px 0;
+    }
+    form .contact .query h3{
+        margin: 0;
+        padding: 5px;
+        padding-left: 0;
+        font-size: 15px;
+        color: #757272;
+    }
+    form .contact .query section{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    form .contact .query section .sect1{
+        margin-right: 20px;
+        
+    }
+    
+    form .contact .query section .sect1,.sect2{
+        width: 100%;
+        font-size: 15px;
+        border: 1px solid black;
+        border-radius: 6px;
+        position: relative;
+        height: 35px;
+        max-width: 100%;
+        padding:10px 0 ;
+        margin-top: 20px;
+        
+    }
+   
+
+    form .contact .mssg textarea{
+        height: 180px;
+    }
+
+
+}

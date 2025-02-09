@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- file link with css  -->
+     <link rel="stylesheet" href="css/normalize.css">
+     <link rel="stylesheet" href="css/contact.css">
+    <!-- website logo  -->
+    <link rel="icon" type="image/png" href="images/téléchargement.jpg">
+    <!-- awsome fonts file  -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<!-- web fonts  -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Poppins:wght@200;400;500;600;700;800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <title>Contact form</title>
+</head>
+<body>
+    <!-- js linking  -->
+    <div class="alert" style="display: none;" id="al">
+        <div class="cont">
+         <h3>Message sent !</h3>
+        <p>thanks for completing the form , we will be in touch soon</p>
+        </div>
+        
+    </div>
+
+    <form>
+        <div class="contact" id="contact">
+            <h2>Contact Us</h2>
+            <div class="name">
+                <div class="fl_sect" >
+                    <h3>First name </h3>
+                    <input type="text" id="firstname">
+                    <p style="display: none;" id="errorFN">this field is required !</p>
+                </div>
+                <div class="fl_sect">
+                    <h3>Last name </h3>
+                    <input type="text" id="lastname" >
+                    <p style="display: none;" id="errorLN">this field is required !</p>
+                </div>
+            </div>
+            <div class="email">
+                <h3>Email</h3>
+                    <input type="email" id="myemail"  required>
+                    <p style="display: none;" id="errorEmail">please enter a valid email address !</p>
+            </div>
+            <div class="query">
+                <h3>Query type</h3>
+                <section>
+                    <div class="sect1">
+                        <input type="radio" name="hey" id="rad1" value="Generale enquery">
+                    <label for="rad1"> General enquery </label>
+                    </div>
+                    <div class="sect2">
+                        <input type="radio" name="hey" id="rad2" value="Support request">
+                    <label for="rad2">Support request</label>
+                    </div>
+                </section>
+                <p style="display: none;" id="errorRad">please select a query type !</p>
+                
+            </div>
+            <div class="mssg">
+                <h3>message</h3>
+                <textarea name="message" rows="3" id="messg"></textarea>
+                <p style="display: none;" id="errorM">this field is required !</p>
+            </div>
+            <div class="check">
+                <input type="checkbox" id="cheky"></input>
+                <label for="">i conscent to be cntacted by the team.</label>
+           
+            </div>
+            <p style="display:none;" id="errorCheky">to submit this form ,please conscent to beeing contacted !</p>
+            <div class="button" >
+                <input type="submit" value="Submit" id="submition">
+            </div>
+            
+        </div>
+    </form>
+
+    <script src="contact.js"></script>
+</body>
+</html>
